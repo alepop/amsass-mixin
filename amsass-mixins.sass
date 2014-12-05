@@ -23,13 +23,3 @@ $am-prefix: null
   $result: split-braces(#{&})
   @at-root [#{$result}-#{$childName}]
     @content
-
-
-+module(Test)
-  color: red
-  +variant(big)
-    background: big
-  +child(tester)
-    red: red
-    +variant(biger)
-      text: overflow
