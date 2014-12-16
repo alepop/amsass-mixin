@@ -11,7 +11,7 @@ $am-prefix: null
     @warn "You need to define $am-prefix variable"
 
   $moduleName: #{$am-prefix}-#{$name}
-  @at-root [#{moduleName}]
+  @at-root [#{$moduleName}]
     @content
 
 =variant($valueName)
